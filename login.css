@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #111111;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200%;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in-out;
+   
+}
+
+.login-container:hover {
+    transform: scale(1.1);
+}
+
+.login-load {
+    margin-top: 100px;
+    height: 520px;
+    padding: 20px 20px;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-load img {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.login-load img:hover {
+    transform: scale(1.1);
+}
+
+.login-load-text {
+    padding-top: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.login-form-input {
+    margin-top: 100px;
+    background-color: #62e674;
+    width: 400px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .login-link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+
+
+}
+
+form .login-link a {
+    color: #fff;
+    background-color: #09214b;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.5s ease-in-out;
+}
+
+form .login-link a:hover {
+    color: #ecf5ec;
+    background-color: #000000;
+    
+    border: 2px solid #111111;
+}
+
+.login-form-input h1 {
+    color: #09214b;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.login-form-input input {
+    background: #f8f9fa;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #09214b;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+form .register-link {
+    color: #09214b;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.login-form-input .label label {
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    color: #09214b;
+    letter-spacing: 1px;
+}
+
+/* =======================
+     Tablet styles
+     ======================= */
+@media (max-width: 900px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .login-load img {
+        width: 60vw;
+        max-width: 300px;
+    }
+
+    .login-form-input {
+        width: 80vw;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* =======================
+       Mobile styles
+       ======================= */
+@media (max-width: 600px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .login-load-text h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .login-load img {
+        width: 80vw;
+        max-width: 180px;
+        margin-bottom: 1rem;
+    }
+
+    .login-form-input {
+        width: 100vw;
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .login-form-input h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .form-group .label label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        padding: 0.6em;
+    }
+
+    .login-link a,
+    .register-link a {
+        font-size: 0.95rem;
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* =======================
+       Small text for very small screens
+       ======================= */
+@media (max-width: 400px) {
+
+    .login-load-text h1,
+    .login-form-input h1 {
+        font-size: 1rem;
+    }
+
+    .form-group .label label {
+        font-size: 0.95rem;
+    }
+
+    .form-control {
+        font-size: 0.95rem;
+    } }

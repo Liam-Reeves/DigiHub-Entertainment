@@ -25,9 +25,7 @@ body{
     transition: 0.5s ease-in-out;
 }
 
-.register-container:hover {
-    transform: scale(1.1);
-}
+
 
 .register-load {
     margin-top: 100px;
@@ -59,6 +57,23 @@ body{
     font-size: 25px;
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
+}
+.form-group label{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+
+}
+.form-group input {
+    width: 100%;
+    height: 40px;
+    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+
 }
 
 .register-form {
@@ -104,9 +119,8 @@ form .register-link a {
 }
 
 form .register-link a:hover {
-    color: #09214b;
-    background-color: rgb(231, 216, 77);
-    ;
+    color: #ffffff;
+    background-color: #111111;
     border: 2px solid #111111;
 }
 
@@ -139,8 +153,8 @@ form .login-link a {
    ======================= */
 @media (max-width: 900px) {
     .register-container {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+     
         height: auto;
         margin-bottom: 40px;
     }
@@ -149,7 +163,10 @@ form .login-link a {
     .register-form {
         margin-top: 40px;
     }
+    .register-load {  
+        height: 500px;  
 
+}
     .register-load img {
         width: 250px;
         height: 250px;
@@ -161,6 +178,17 @@ form .login-link a {
         height: auto;
         padding: 20px 0;
     }
+    .form-group input{
+        height: 30px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .register-link a {
+        width: 200px;
+        
+    }
 }
 
 /* =======================
@@ -168,7 +196,7 @@ form .login-link a {
      ======================= */
 @media (max-width: 600px) {
     .register-container {
-        flex-direction: column;
+        display: flex;
         align-items: center;
         padding: 1rem 0.5rem;
         height: auto;
@@ -176,9 +204,9 @@ form .login-link a {
     }
 
     .register-load {
-        padding: 10px 5px;
+    
         margin-top: 20px;
-        height: auto;
+       
     }
 
     .register-load-text {
@@ -218,25 +246,93 @@ form .login-link a {
         padding-bottom: 12px;
     }
 }
+/* Media Queries */
 
-/* =======================
-     Small text for very small screens
-     ======================= */
-@media (max-width: 400px) {
-    .register-load-text {
+/* Mobile Phones (up to 600px) */
+@media (max-width: 600px) {
+    .register-container {
+        flex-direction: row;
+        margin: 20px;
+    }
+    .register-load {
+        height: 530px;
+        padding: 20px;
+        width: 100%;
+    }
+    .register-load,
+    .register-form {
+        padding: 20px;
+    }
+
+    .register-load-text h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .register-load-text p {
         font-size: 1rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .register-load img {
+       margin-left: 40px;
+       margin-top: 30px;
+        max-width: 80%;
     }
 
     .register-form h1 {
-        font-size: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
-    .register-input {
-        font-size: 0.95rem;
+    .register-link {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    form .register-link a,
-    form .login-link a {
-        font-size: 0.9rem;
+    .register-link a {
+        text-align: center;
+        display: block;
+    }
+
+    .login-link {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .form-group input {
+        max-width: 200px;
+        height: 35px;
+     
     }
 }
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .register-container {
+        flex-direction: row;
+        margin: 30px 40px;
+    }
+
+    .register-load,
+    .register-form {
+        padding: 30px 25px;
+    }
+
+    .register-load-text h1 {
+        font-size: 1.9rem;
+    }
+
+    .register-load-text p {
+        font-size: 1.05rem;
+    }
+
+    .register-form h1 {
+        font-size: 2rem;
+    }
+
+    .register-link {
+        justify-content: space-around;
+    } }
+

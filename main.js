@@ -11,5 +11,7 @@
 
   document.querySelectorAll('.animate-on-scroll').forEach(el => {
     observer.observe(el);
-  });
+  }
 
+
+  );

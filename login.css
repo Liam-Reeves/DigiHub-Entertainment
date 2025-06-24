@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background: #111111;
 }
@@ -19,7 +20,7 @@ body {
     height: 200%;
     margin-bottom: 20px;
     transition: 0.5s ease-in-out;
-   
+
 }
 
 /* .login-container:hover {
@@ -29,7 +30,7 @@ body {
 .login-load {
     margin-top: 100px;
     height: 520px;
-    padding: 20px 20px;
+
     background: #000000;
     align-items: center;
     justify-content: center;
@@ -50,6 +51,8 @@ body {
 
 .login-load-text {
     padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
     text-align: center;
     font-size: 25px;
@@ -71,10 +74,6 @@ form .login-link {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-
-
-
 }
 
 form .login-link a {
@@ -95,7 +94,7 @@ form .login-link a {
 form .login-link a:hover {
     color: #ecf5ec;
     background-color: #000000;
-    
+
     border: 2px solid #111111;
 }
 
@@ -146,8 +145,7 @@ form .register-link {
 @media (max-width: 600px) {
     .login-container {
         display: flex;
-        margin: 20px;
-        height: 100vh;
+
     }
 
     .login-load,
@@ -158,18 +156,20 @@ form .register-link {
     .login-load-text h1 {
         font-size: 1.2rem;
         text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .login-load img {
         width: 200px;
         height: 200px;
         margin-top: 50px;
-        }
+    }
 
     .login-form-input h1 {
         font-size: 1.2rem;
         text-align: center;
-        margin-bottom: 25px;
+
     }
 
     .login-link {
@@ -182,34 +182,31 @@ form .register-link {
         text-align: center;
         display: block;
     }
-     .form-group input {
+
+    .form-group input {
         max-width: 200px;
-         height: 50px;
-        }
+        height: 50px;
+    }
 }
 
 /* Tablets (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
     .login-container {
         flex-direction: row;
-        margin: 30px 40px;
+
     }
 
-    .login-load,
-    .login-form-input {
-        padding: 30px 25px;
-    }
-     .form-group input {
+    .form-group input {
         max-width: 250px;
         height: 50px;
-     }
+    }
 
     .login-load-text h1 {
         font-size: 1.8rem;
     }
 
     .login-form-input h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .login-link {
@@ -217,3 +214,55 @@ form .register-link {
     }
 }
 
+/* Extra Small Devices (up to 430px) */
+@media (max-width: 430px) {
+    .login-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 0;
+        padding: 0 8px;
+    }
+    .login-load{
+        display: none;
+    }
+    .login-load,
+    .login-form-input {
+        width: 100%;
+        max-width: 340px;
+        min-width: 0;
+        padding: 16px 8px;
+        margin: 0 auto 18px auto;
+        box-sizing: border-box;
+    }
+ 
+
+    .login-form-input {
+        margin-top: 40px;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .login-form-input h1 {
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .login-form-input input {
+        font-size: 1rem;
+        height: 38px;
+        border-radius: 8px;
+    }
+
+    .login-link a {
+        max-width: 200px;
+        font-size: 0.95rem;
+        padding: 12px 0;
+    }
+
+    .form-group input {
+        max-width: 180px;
+        height: 40px;
+    }
+}

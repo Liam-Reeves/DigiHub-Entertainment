@@ -9,9 +9,10 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #111111;
- 
+
 }
 
 .register-container {
@@ -41,8 +42,8 @@ body{
     width: 300px;
     height: 300px;
     margin-left: 20px;
-    
- 
+
+
     transition: 0.5s ease-in-out;
 }
 
@@ -58,16 +59,18 @@ body{
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
 }
-.form-group label{
+
+.form-group label {
     font-size: 1rem;
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
 
 }
+
 .form-group input {
     width: 100%;
     height: 40px;
-    
+
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 14px;
@@ -78,7 +81,7 @@ body{
 
 .register-form {
     margin-top: 100px;
-    background-color:#62e674;
+    background-color: #62e674;
     width: 400px;
     height: 520px;
     display: flex;
@@ -154,7 +157,7 @@ form .login-link a {
 @media (max-width: 900px) {
     .register-container {
         display: flex;
-     
+
         height: auto;
         margin-bottom: 40px;
     }
@@ -163,10 +166,12 @@ form .login-link a {
     .register-form {
         margin-top: 40px;
     }
-    .register-load {  
-        height: 500px;  
 
-}
+    .register-load {
+        height: 500px;
+
+    }
+
     .register-load img {
         width: 250px;
         height: 250px;
@@ -178,16 +183,18 @@ form .login-link a {
         height: auto;
         padding: 20px 0;
     }
-    .form-group input{
+
+    .form-group input {
         height: 30px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
-       
+
     }
+
     .register-link a {
         width: 200px;
-        
+
     }
 }
 
@@ -204,9 +211,9 @@ form .login-link a {
     }
 
     .register-load {
-    
+
         margin-top: 20px;
-       
+
     }
 
     .register-load-text {
@@ -246,6 +253,7 @@ form .login-link a {
         padding-bottom: 12px;
     }
 }
+
 /* Media Queries */
 
 /* Mobile Phones (up to 600px) */
@@ -254,11 +262,12 @@ form .login-link a {
         flex-direction: row;
         margin: 20px;
     }
+
     .register-load {
-        height: 530px;
-        padding: 20px;
-        width: 100%;
+        display: none;
+
     }
+
     .register-load,
     .register-form {
         padding: 20px;
@@ -276,8 +285,8 @@ form .login-link a {
     }
 
     .register-load img {
-       margin-left: 40px;
-       margin-top: 30px;
+        margin-left: 40px;
+        margin-top: 30px;
         max-width: 80%;
     }
 
@@ -301,10 +310,11 @@ form .login-link a {
         text-align: center;
         margin-top: 10px;
     }
+
     .form-group input {
         max-width: 200px;
         height: 35px;
-     
+
     }
 }
 
@@ -334,5 +344,76 @@ form .login-link a {
 
     .register-link {
         justify-content: space-around;
-    } }
+    }
+}
 
+@media (max-width: 430px) {
+    .register-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 6px;
+        height: auto;
+        margin: 0;
+    }
+
+    .register-load,
+    .register-form {
+        width: 100%;
+        max-width: 340px;
+        margin-top: 40px;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+    .register-load-text {
+        font-size: 1.1rem;
+        padding-top: 12px;
+    }
+
+    .register-load-text h1 {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .register-load-text p {
+        font-size: 0.98rem;
+        margin-top: 18px;
+    }
+
+    .register-form {
+        margin-top: 40px;
+        height: auto;
+        min-height: 350px;
+        padding: 12px 6px;
+    }
+
+    .register-form h1 {
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .register-input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .form-group input {
+        max-width: 180px;
+        height: 36px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+
+    .register-link a,
+    .login-link a {
+        max-width: 200px;
+        font-size: 0.95rem;
+        padding: 12px 0;
+        margin: 0 auto;
+        display: block;
+    }
+}

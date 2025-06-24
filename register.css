@@ -161,21 +161,12 @@ form .login-link a {
         height: auto;
         margin-bottom: 40px;
     }
-
-    .register-load,
-    .register-form {
-        margin-top: 40px;
-    }
-
     .register-load {
-        height: 500px;
-
+        display: none;
+     ;
     }
 
-    .register-load img {
-        width: 250px;
-        height: 250px;
-    }
+
 
     .register-form {
         width: 90vw;
@@ -211,20 +202,9 @@ form .login-link a {
     }
 
     .register-load {
-
+        display: none;
         margin-top: 20px;
 
-    }
-
-    .register-load-text {
-        padding-top: 20px;
-        font-size: 18px;
-    }
-
-    .register-load img {
-        width: 140px;
-        height: 140px;
-        margin-bottom: 10px;
     }
 
     .register-form {
@@ -324,20 +304,9 @@ form .login-link a {
         flex-direction: row;
         margin: 30px 40px;
     }
-
-    .register-load,
-    .register-form {
-        padding: 30px 25px;
+    .register-load {
+        display: none;
     }
-
-    .register-load-text h1 {
-        font-size: 1.9rem;
-    }
-
-    .register-load-text p {
-        font-size: 1.05rem;
-    }
-
     .register-form h1 {
         font-size: 2rem;
     }

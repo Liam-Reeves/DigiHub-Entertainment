@@ -151,22 +151,17 @@ form .login-link a {
 
 }
 
-/* =======================
-   Tablet styles
-   ======================= */
 @media (max-width: 900px) {
     .register-container {
         display: flex;
-
         height: auto;
         margin-bottom: 40px;
     }
+
     .register-load {
         display: none;
-     ;
+
     }
-
-
 
     .register-form {
         width: 90vw;
@@ -189,9 +184,6 @@ form .login-link a {
     }
 }
 
-/* =======================
-     Mobile styles
-     ======================= */
 @media (max-width: 600px) {
     .register-container {
         display: flex;
@@ -203,8 +195,7 @@ form .login-link a {
 
     .register-load {
         display: none;
-        margin-top: 20px;
-
+       
     }
 
     .register-form {
@@ -233,10 +224,6 @@ form .login-link a {
         padding-bottom: 12px;
     }
 }
-
-/* Media Queries */
-
-/* Mobile Phones (up to 600px) */
 @media (max-width: 600px) {
     .register-container {
         flex-direction: row;
@@ -245,47 +232,24 @@ form .login-link a {
 
     .register-load {
         display: none;
-
     }
-
     .register-load,
     .register-form {
         padding: 20px;
     }
-
-    .register-load-text h1 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .register-load-text p {
-        font-size: 1rem;
-        margin-top: 60px;
-        text-align: center;
-    }
-
-    .register-load img {
-        margin-left: 40px;
-        margin-top: 30px;
-        max-width: 80%;
-    }
-
     .register-form h1 {
         font-size: 1.8rem;
         text-align: center;
         margin-bottom: 25px;
     }
-
     .register-link {
         flex-direction: column;
         gap: 10px;
     }
-
     .register-link a {
         text-align: center;
         display: block;
     }
-
     .login-link {
         text-align: center;
         margin-top: 10px;
@@ -294,19 +258,19 @@ form .login-link a {
     .form-group input {
         max-width: 200px;
         height: 35px;
-
     }
 }
 
-/* Tablets (601px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
     .register-container {
         flex-direction: row;
         margin: 30px 40px;
     }
+
     .register-load {
         display: none;
     }
+
     .register-form h1 {
         font-size: 2rem;
     }
@@ -332,10 +296,6 @@ form .login-link a {
         margin-top: 40px;
         box-sizing: border-box;
     }
-
-
-
-
 
     .register-load-text {
         font-size: 1.1rem;

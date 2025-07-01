@@ -15,10 +15,11 @@
     flex-direction: column;
     padding-top: 30px;
 }
-.sidebar h2 {
-    font-size: 1.4em;
-    margin: 0 0 30px 30px;
-    letter-spacing: 2px;
+.sidebar .logo{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .nav {

@@ -9,8 +9,8 @@
     left: 0;
     width: 210px;
     height: 100vh;
-    background: #222a38;
-    color: #fff;
+    background: #0e0d0d;
+    color: #f2f2f2;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -35,16 +35,17 @@
 .nav a {
     display: block;
     padding: 12px 30px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     border-left: 4px solid transparent;
-    transition: background 0.2s, border-color 0.2s;
+    transition: background 0.5s, border-color 0.2s;
 }
 
 .nav a.active,
 .nav a:hover {
-    background: #2d3650;
-    border-left: 4px solid #3d8bfd;
+    background: #fffafa;
+    color: #020202;
+    border-right: 4px solid #3d8bfd;
 }
 
 .main-content {
@@ -243,3 +244,112 @@
         width: 100%;
     }
 }
+
+/* Basic responsive media queries for dashboard.html (junior level) */
+
+/* For tablets and below */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px 0;
+    }
+
+    .sidebar .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sidebar ul.nav li a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .main-content {
+        margin-left: 60px;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-card,
+    .settings-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+    }
+
+    .sidebar .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .sidebar ul.nav {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidebar ul.nav li {
+        display: inline-block;
+    }
+
+    .sidebar ul.nav li a {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 8px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .profile-card,
+    .settings-form {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 10px;
+    }
+
+    .profile-card h3,
+    .profile-card p,
+    .profile-card button,
+    .settings-form label,
+    .settings-form input,
+    .settings-form button {
+        font-size: 14px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 8px;
+    } }

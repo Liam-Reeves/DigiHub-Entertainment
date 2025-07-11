@@ -118,12 +118,12 @@ select {
 .optional {
     color: #999;
 }
-.paypal-payment-info{
+/* .paypal-payment-info{
     display: none;
 }
 .mpesa-payment-info {
     display: none;
-}
+} */
 
 .subscribe-btn {
     background-color: #000;
@@ -136,7 +136,7 @@ select {
     width: 100%;
     margin-top: 20px;
 }
-#mpesa-btn {
+.mpesa-btn {
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -148,7 +148,7 @@ select {
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
 }
-#paypal-btn {
+.paypal-btn {
     background-color: #023c63;
     color: #fff;
     border: none;
@@ -160,11 +160,11 @@ select {
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
 }
-#paypal-btn:hover{
+.paypal-btn:hover{
     background-color: #005f8a;
     transform: translateY(-2px); ;
 }
-#mpesa-btn:hover {
+.mpesa-btn:hover {
     background-color: #66bb6a;
     transform: translateY(-2px);
 }

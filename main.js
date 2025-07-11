@@ -30,3 +30,10 @@
              document.getElementById('tab-' + this.dataset.tab).classList.add('active');
          });
      });
+
+      // Simple JavaScript for form responsiveness and validation
+    const form = document.getElementById('subscriptionForm');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Subscription form submitted!');
+    });

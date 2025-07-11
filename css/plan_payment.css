@@ -136,7 +136,7 @@ select {
     width: 100%;
     margin-top: 20px;
 }
-.mpesa-btn {
+#mpesa-btn {
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -148,7 +148,7 @@ select {
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
 }
-.paypal-btn {
+#paypal-btn {
     background-color: #023c63;
     color: #fff;
     border: none;
@@ -160,11 +160,11 @@ select {
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
 }
-.paypal-btn:hover{
+#paypal-btn:hover{
     background-color: #005f8a;
     transform: translateY(-2px); ;
 }
-.mpesa-btn:hover {
+#mpesa-btn:hover {
     background-color: #66bb6a;
     transform: translateY(-2px);
 }
@@ -283,8 +283,8 @@ select {
     margin-bottom: 8px;
   }
   .subscribe-btn,
-  .mpesa-btn,
-  .paypal-btn {
+  #mpesa-btn,
+  #paypal-btn {
     font-size: 1rem;
     padding: 10px 12px;
     width: 100%;

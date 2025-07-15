@@ -118,12 +118,7 @@ select {
 .optional {
     color: #999;
 }
-/* .paypal-payment-info{
-    display: none;
-}
-.mpesa-payment-info {
-    display: none;
-} */
+
 
 .subscribe-btn {
     background-color: #000;
@@ -212,7 +207,6 @@ select {
     gap: 10px;
   }
 }
-
 /* Mobile phones */
 @media (max-width: 600px) {
   .container {

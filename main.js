@@ -37,3 +37,57 @@
       event.preventDefault();
       alert('Subscription form submitted!');
     });
+
+// Payment Method Switcher ...yoo i tried msee
+
+// const MpesaPaymentSwitcher = document.querySelector("#mpesa-payment-info");
+// const MpesaPayment = document.addEventListener("click", function () {
+//     PayPalPaymentSwitcher.classList.remove("active");
+//       VisaPaymentSwitcher.classList.remove("active");
+//     MpesaPaymentSwitcher.classList.add("active");
+// });
+
+
+// const PayPalPaymentSwitcher = document.querySelector("#paypal-payment-info");
+// const PayPalPayment = document.addEventListener("click", function () {
+//   VisaPaymentSwitcher.classList.remove("active");
+//   MpesaPaymentSwitcher.classList.remove("active");
+//   PayPalPaymentSwitcher.classList.add("active");
+// });
+// const VisaPaymentSwitcher = document.querySelector("#visa-payment-info");
+// const VisaPayment = document.addEventListener("click", function () {
+//   PayPalPaymentSwitcher.classList.remove("active");
+//   MpesaPaymentSwitcher.classList.remove("active");
+//   VisaPaymentSwitcher.classList.add("active");
+// });
+// Get references to the switcher elements
+const MpesaPaymentSwitcher = document.querySelector("#mpesa-payment-info");
+const PayPalPaymentSwitcher = document.querySelector("#paypal-payment-info");
+const VisaPaymentSwitcher = document.querySelector("#visa-payment-info");
+
+// Function to handle the payment method switching
+function switchPaymentMethod(activeSwitcher) {
+    // Remove 'active' class from all switchers
+    MpesaPaymentSwitcher.classList.remove("active");
+    PayPalPaymentSwitcher.classList.remove("active");
+    VisaPaymentSwitcher.classList.remove("active");
+
+    // Add 'active' class to the clicked switcher
+    activeSwitcher.classList.add("active");
+}
+
+// Add event listeners to each switcher element
+MpesaPaymentSwitcher.addEventListener("click", function() {
+    switchPaymentMethod(MpesaPaymentSwitcher);
+});
+
+PayPalPaymentSwitcher.addEventListener("click", function() {
+    switchPaymentMethod(PayPalPaymentSwitcher);
+});
+
+VisaPaymentSwitcher.addEventListener("click", function() {
+    switchPaymentMethod(VisaPaymentSwitcher);
+});
+
+
+

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-==136f0o%cnn$p!@e947*q%ftel(=uyif+=v^@tpxz1qhb!cn9
 
 DEBUG = os.getenv('RENDER') != 'TRUE' 
 
-ALLOWED_HOSTS = ['uprisestreams.onrender.com','localhost']
+ALLOWED_HOSTS = ['UpriseStreaming.onrender.com','localhost']
 
 
 # Application definition

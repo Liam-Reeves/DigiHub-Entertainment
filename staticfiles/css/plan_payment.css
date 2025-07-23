@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+    padding: 2rem;
+    border: 1px solid #000;
+}
+.package-display {
+    background-color: #000;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+
+}
+.package-display img{
+    width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.package-display h1 {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+}
+.package-display p{
+    font-size: 16px;
+    text-align: center;
+  
+}
+.package-display h2{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+.payment-methods {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.payment-method {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+.payment-method a img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.payment-method:first-child {
+    margin-left: 0;
+}
+
+.payment-method:last-child {
+    margin-right: 0;
+}
+
+.card-payment-info {
+    margin-bottom: 20px;
+}
+
+.card-types {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-type {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.card-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.card-field:last-child {
+    margin-right: 0;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.optional {
+    color: #999;
+}
+
+
+.subscribe-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+.mpesa-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.paypal-btn {
+    background-color: #023c63;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.paypal-btn:hover{
+    background-color: #005f8a;
+    transform: translateY(-2px); ;
+}
+.mpesa-btn:hover {
+    background-color: #66bb6a;
+    transform: translateY(-2px);
+}
+
+/* Responsive media queries for plan_payment.html and plan_payment.css */
+
+/* Tablet and below */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .package-display img {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+     
+  }
+  .package-display {
+    padding: 12px;
+  }
+  .payment-section {
+    padding: 12px;
+    height: auto;
+  }
+  .payment-methods {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .payment-method {
+    min-width: 80px;
+    margin: 5px;
+    padding: 6px;
+  }
+  .payment-method a img {
+    width: 80px;
+    height: 80px;
+  }
+  .card-details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* Mobile phones */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: none;
+  }
+  .package-display {
+    padding: 6px;
+
+  }
+  .package-display img {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+    
+  }
+  .package-display h1 {
+    font-size: 1.1rem;
+    padding: 4px 0;
+  }
+  .package-display p,
+  .package-display h2 {
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+  .payment-section {
+    padding: 6px;
+    height: auto;
+  }
+  .payment-section h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .payment-methods {
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+  }
+  .payment-method {
+    min-width: 60px;
+    margin: 3px;
+    padding: 4px;
+  }
+  .payment-method a img {
+    width: 80px;
+    height: 80px;
+  }
+  .card-details {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .card-field,
+  .card-type,
+  .paypal-details,
+  .mpesa-details {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  input,
+  select {
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  .subscribe-btn,
+  #mpesa-btn,
+  #paypal-btn {
+    font-size: 1rem;
+    padding: 10px 12px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+}

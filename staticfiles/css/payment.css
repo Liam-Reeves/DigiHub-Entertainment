@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    background: #0e0d0d;
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.sidebar .logo {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-bottom: 10px;
+}
+
+.nav a {
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.nav a.active,
+.nav a:hover {
+    background: #2d3650;
+    border-left: 4px solid #3d8bfd;
+}
+.payment-section {
+    width: 100%;
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7fa;
+}
+
+.payment-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+/* Responsive media queries for payment.html */
+
+/* For tablets and below */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 60px;
+        padding-top: 10px;
+    }
+
+    .sidebar .logo {
+        width: 100px;
+        height: 100px;
+        padding: 8px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 10px 0 10px 10px;
+        text-align: left;
+    }
+
+    .payment-section {
+        margin-left: 60px;
+        padding: 20px 10px;
+        height: auto;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 600px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 12px;
+    }
+
+    .sidebar .logo {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav li {
+        margin-bottom: 0;
+    }
+
+    .nav a {
+        font-size: 12px;
+        padding: 6px 8px;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .nav a.active,
+    .nav a:hover {
+        background: #2d3650;
+        border-bottom: 2px solid #3d8bfd;
+        border-left: none;
+    }
+
+    .payment-section {
+        margin-left: 0;
+        padding: 12px 4px;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .payment-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .form-group label,
+    .form-group input {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 320px;
+    } }

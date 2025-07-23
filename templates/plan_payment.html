@@ -76,13 +76,15 @@
       </div>
       <button class="paypal-btn">Pay with PayPal</button>
     </div>
-    <div id="mpesa-payment-info">
+    <form id="mpesa-payment-info" method="post" action="{% url 'STK_PUSH' %}">
+      {% csrf_token %}
       <h3>M-Pesa</h3>
+      <input type="number" name="amount" placeholder="Enter your package amount" value="500"/>
       <div class="mpesa-details">
         <label>Phone number</label>
-        <input type="tel" placeholder="Enter your Mpesa phone number" />
-        <button class="mpesa-btn">Mpesa STK Push</button>
-      </div>
+        <input type="tel" name="phone_number" placeholder="Enter your Mpesa phone number" />
+        <button type="submit" class="mpesa-btn">Mpesa STK Push</button>
+      </form>
     </div>
     <button class="subscribe-btn">Subscribe</button>
   </div>

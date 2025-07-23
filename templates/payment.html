@@ -1,0 +1,30 @@
+{% extends 'layout.html' %} {% load static %} {% block title %}Payment -
+EStreams{% endblock %} {% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/payment.css' %}" />
+{% endblock %} {% block content %}
+<div class="sidebar">
+  <a href="{% url 'index' %}"
+    ><img class="logo" src="{% static 'assets/Uprise_logo.jpg' %}" alt=""
+  /></a>
+  <ul class="nav">
+    <li><a href="{% url 'dashboard' %}" class="active">Home</a></li>
+    <li><a href="{% url 'payment' %}">Payment Details</a></li>
+    <li><a href="{% url 'subscription' %}">Subscriptions</a></li>
+  </ul>
+</div>
+<div class="payment-section">
+  <h2>Manage Payment Method</h2>
+  <form>
+    <div class="form-group">
+      <label for="cardNumber">Card Number</label>
+      <input
+        type="text"
+        id="cardNumber"
+        name="cardNumber"
+        placeholder="1234 5678 9012 3456"
+        required
+      />
+    </div>
+  </form>
+</div>
+{% endblock %}

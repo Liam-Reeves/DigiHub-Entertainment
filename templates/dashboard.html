@@ -1,0 +1,69 @@
+{% extends 'layout.html' %} {% load static %} {% block title %}Dashboard -
+EStreams{% endblock %} {% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
+{% endblock %} {% block content %}
+<div class="sidebar">
+  <a href="{% url 'index' %}"
+    ><img class="logo" src="{% static 'assets/Uprise_logo.jpg' %}" alt=""
+  /></a>
+  <ul class="nav">
+    <li><a href="{% url 'dashboard' %}" class="active">Home</a></li>
+    <li><a href="{% url 'payment' %}">Payment Details</a></li>
+    <li><a href="{% url 'subscription' %}">Subscriptions</a></li>
+  </ul>
+</div>
+<div class="main-content">
+  <div class="topbar">
+    <div></div>
+    <div class="right">
+      <div class="notification" id="notifIcon">
+        <span class="icon"><i class="fa-solid fa-bell"></i></span>
+        <span class="badge" id="notifBadge" style="display: none">!</span>
+      </div>
+      <div class="profile">
+        <div class="profile-img"></div>
+        <span class="profile-name">Liam Reeves</span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="profile-card">
+      <div class="profile-avatar"></div>
+      <h3>Liam Reeves</h3>
+      <p>Member since: 2025</p>
+
+      <button>View Public Profile</button>
+    </div>
+    <div class="settings-form">
+      <div class="tabs">
+        <div class="tab active">Account Settings</div>
+        <div class="tab">Notifications</div>
+      </div>
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" value="" />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" value="" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" value="" />
+          </div>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" value="" />
+          </div>
+        </div>
+
+        <button type="submit" class="update-btn">Update</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

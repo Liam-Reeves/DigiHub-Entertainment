@@ -1,0 +1,90 @@
+{% extends 'layout.html' %} {% load static %} {% block title %}Pay Selected Plan
+- EStreams{% endblock %} {% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/plan_payment.css' %}" />
+{% endblock %} {% block content %}
+<div class="container">
+  <div class="package-display">
+    <img
+      src="{% static 'assets/alexander-shatov-UVfvFrp4x4E-unsplash-removebg-preview.png' %}"
+      alt=""
+    />
+    <h1>Netflix Premium Package</h1>
+    <p>
+      Enjoy unlimited streaming of movies, TV shows, <br />and exclusive content
+      with our Netflix Premium Package.
+    </p>
+    <h2>Price: KES 500/month</h2>
+  </div>
+  <hr />
+  <div class="payment-section">
+    <h3>Payment method</h3>
+
+    <div class="payment-methods">
+      <div class="payment-method">
+        <a href="#visa-payment-info"
+          ><img src="{% static 'assets/visa_logo.png' %}" alt=""
+        /></a>
+      </div>
+      <div class="payment-method">
+        <a href="#google-payment-info"
+          ><img src="{% static 'assets/google_pay.png' %}" alt=""
+        /></a>
+      </div>
+      <div class="payment-method">
+        <a href="#mpesa-payment-info"
+          ><img src="{% static 'assets/modern_mpesa.png' %}" alt=""
+        /></a>
+      </div>
+      <div class="payment-method">
+        <a href="#paypal-payment-info"
+          ><img src="{% static 'assets/paypal.png' %}" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <h3>Payment information</h3>
+
+    <div class="card-payment-info">
+      <div class="card-types">
+        <div class="card-type">VISA / Mastercard / American Express</div>
+      </div>
+
+      <div class="card-details">
+        <div class="card-field">
+          <label>Card number</label>
+          <input type="number" placeholder="0000 0000 0000 0000" />
+        </div>
+        <div class="card-field">
+          <label>Expiry date</label>
+          <input type="date" placeholder="MM/YYYY" />
+        </div>
+        <div class="card-field">
+          <label>CVV</label>
+          <input type="number" placeholder="3-digit code" />
+        </div>
+      </div>
+
+      <label>Name on card</label>
+      <input type="text" placeholder="e.g. Liam Reeves" />
+    </div>
+
+    <div id="paypal-payment-info">
+      <h3>PayPal</h3>
+      <div class="paypal-details">
+        <label>Email address</label>
+        <input type="email" placeholder="Enter your PayPal email" />
+      </div>
+      <button class="paypal-btn">Pay with PayPal</button>
+    </div>
+    <div id="mpesa-payment-info">
+      <h3>M-Pesa</h3>
+      <div class="mpesa-details">
+        <label>Phone number</label>
+        <input type="tel" placeholder="Enter your Mpesa phone number" />
+        <button class="mpesa-btn">Mpesa STK Push</button>
+      </div>
+    </div>
+    <button class="subscribe-btn">Subscribe</button>
+  </div>
+</div>
+{% endblock %}

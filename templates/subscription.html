@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} {% load static %} {% block title %}Subscriptions -
+EStreams{% endblock %} {% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/subscription.css' %}" />
+{% endblock %} {% block content %}
+<div class="sidebar">
+  <a href="{% url 'index' %}"
+    ><img class="logo" src="{% static 'assets/Uprise_logo.jpg' %}" alt=""
+  /></a>
+  <ul class="nav">
+    <li><a href="{% url 'dashboard' %}" class="active">Home</a></li>
+    <li><a href="{% url 'payment' %}">Payment Details</a></li>
+    <li><a href="{% url 'subscription' %}">Subscriptions</a></li>
+  </ul>
+</div>
+{% endblock %}
